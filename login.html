@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/styleLogin.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="content first-content">
+        <div class="first-column">
+            <h2 class="title title-primary">Bem vindo de volta!</h2>
+            <p class="description description-primary">Para se manter conectado</p>
+            <p class="description description-primary">por favor entre com seu cadastro</p>
+            <button id="signin" class="btn btn-primary">entrar</button>
+        </div>
+        <div class="second-column">
+            <h2 class="title title-second">Crie sua Conta</h2>
+            <div class="social-media">
+                <ul class="list-social-media">
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                    </a>
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-google-plus-g"></i>
+                        </li>
+                    </a>
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-linkedin-in"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div><!-- social media -->
+            <p class="description description-second">ou use seu e-mail para se registrar:</p>
+            <form id="form-cadastro" class="form">
+                <label class="label-input">
+                    <i class="far fa-user icon-modify"></i>
+                    <input type="text" placeholder="Nome"  id="nome">
+                </label>
+
+                <label class="label-input">
+                    <i class="far fa-envelope icon-modify"></i>
+                    <input type="email" placeholder="Email" id="email">
+                </label>
+
+                <label class="label-input">
+                    <i class="fas fa-lock icon-modify"></i>
+                    <input type="password" placeholder="Senha" id="senha">
+                </label>
+
+                <button type="submit" class="btn btn-second">cadastrar</button>
+            </form>
+        </div><!-- second column -->
+    </div><!-- first content -->
+    <div class="content second-content">
+        <div class="first-column">
+            <h2 class="title title-primary">olá, paciente!</h2>
+            <p class="description description-primary">Entre com seu cadastro</p>
+            <p class="description description-primary">e venha marcar um agendamento conosco</p>
+            <button id="signup" class="btn btn-primary">cadastrar</button>
+        </div>
+        <div class="second-column">
+            <h2 class="title title-second">entre no sistema</h2>
+            <div class="social-media">
+                <ul class="list-social-media">
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                    </a>
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-google-plus-g"></i>
+                        </li>
+                    </a>
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-linkedin-in"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div><!-- social media -->
+            <p class="description description-second">ou use seu e-mail para entrar:</p>
+            <form class="form" id="form-login">
+                <label class="label-input">
+                    <i class="far fa-envelope icon-modify"></i>
+                    <input type="email" placeholder="Email" id="email-login">
+                </label>
+
+                <label class="label-input">
+                    <i class="fas fa-lock icon-modify"></i>
+                    <input type="password" placeholder="Senha" id="senha-login">
+                </label>
+
+                <a class="password" href="#">esqueceu a senha?</a>
+                <button type="submit" class="btn btn-second">entrar</button>
+            </form>
+        </div><!-- second column -->
+    </div><!-- second-content -->
+</div>
+<script>
+    // FRONT END
+    const btnSignin = document.querySelector("#signin");
+    const btnSignup = document.querySelector("#signup");
+
+    const body = document.querySelector("body");
+
+
+    btnSignin.addEventListener("click", function () {
+        body.className = "sign-in-js";
+    });
+
+    btnSignup.addEventListener("click", function () {
+        body.className = "sign-up-js";
+    })
+</script>
+<script src="assets/js/cadastroCliente.js"></script>
+<script src="assets/js/loginCliente.js"></script>
+</body>
+</html>

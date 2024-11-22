@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da tela */
+    background-color: #f0f0f0; /* Cor de fundo */
+    font-family: "Poppins", "sans-serif";
+}
+
+
+.um {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#formReserva {
+    background-color: white; /* Cor de fundo do formulário */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 20px; /* Espaçamento interno */
+    width: 300px; /* Largura do quadrado */
+    text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin: 10px 0 5px; /* Espaçamento em cima e embaixo */
+}
+
+select, input[type="text"] {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento abaixo do campo */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+button {
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+#minhasReservas {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+#minhasReservas li {
+    padding: 10px; /* Espaçamento interno para cada item da lista */
+    border-bottom: 1px solid #ccc; /* Borda inferior */
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer_list{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+#footer_content{
+    width: 75%;
+    height: 70%;
+    background-color: #16AD8B;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 3.5rem;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+
+    color: #F2F2F2;
+ 
+    transition: all 0.4s;
+} 
+
+#footer_social_media .footer-link:houver {
+    opacity: 0.8;
+}
+
+#instagram {
+    margin: 10px;
+    padding: 5px;
+    margin-left: 25px;
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+
+}
+
+#facebook{
+    margin: 10px;
+    padding: 5px;
+    background-color: #4267b3;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#whatsapp{
+    margin: 10px;
+    padding: 5px;
+    background-color: #25d366;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#footer_subiscribe{
+    color: #fff;
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: #043529;
+    border: none;
+    color: #F2F2F2;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 50px;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+.footer_copyright{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Reservas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/reserva.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+<div class="um"> 
+<h2>Reservar Consulta</h2>
+<form id="formReserva">
+    <label for="tipoConsulta">Tipo de Consulta:</label>
+    <select id="tipoConsulta" required>
+        <option value="Oftalmologia">Oftalmologia</option>
+        <option value="Cardiologia">Cardiologia</option>
+        <option value="Obstetricia">Obstetrícia</option>
+        <option value="Dermatologia">Dermatologia</option>
+        <option value="Ortopedia">Ortopedia</option>
+        <option value="Pediatria">Pediatria</option>
+        <option value="Endocrinologia">Endocrinologi</option>
+        <option value="Ginecologia">Ginecologia</option>
+        <option value="Neurologia">Neurologia</option>
+        <option value="Gastroenterologia">Gastroenterologia</option>
+        <option value="Psiquiatria">Psiquiatria</option>
+        <option value="Reumatologia">Reumatologia</option>
+        <option value="Urologia">Urologia</option>
+        <option value="Otorrinolaringologia">Otorrinolaringologia</option>
+        <option value="Hematologia">Hematologia</option>
+        <option value="Nefrologia">Nefrologia</option>
+    </select>
+
+    <label for="dataReserva">Data da Reserva:</label>
+    <input type="text" id="dataReserva" class="flatpickr" required>
+
+
+    <label for="horario">Horário:</label>
+    <select id="horario" required>
+        <!-- Os horários serão preenchidos dinamicamente -->
+    </select>
+
+    <button type="submit">Reservar</button>
+</form>
+</div>
+
+<h2>Minhas Reservas</h2>
+<ul id="minhasReservas">
+    <!-- Lista de reservas será preenchida dinamicamente -->
+</ul>
+
+<script src="assets/js/reservas.js"></script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        flatpickr('#dataReserva', {
+            dateFormat: 'd-m-Y',
+            minDate: 'today',
+            locale: 'pt'
+        });
+    });
+</script>
+</body>
+<!--footer-->
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>+life</h1>
+            <p>Isso é tudo para sua saúde!</p>
+
+            <id id="footer_social_media"></id>
+                <a href="#" class="footer_link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="#" class="footer_link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="footer_link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+          </div>
+
+          <ul class="footer_list">
+            <li>
+                <h3>Linguagens</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">JavaScript</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">HTML</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">CSS</a>
+            </li>
+          </ul>
+          
+          <ul class="footer_list">
+            <li>
+                <h3>Participantes</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Arthur Augusto</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Gabriel Roberto</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Victor Neves</a>
+            </li>
+          </ul>
+          
+          <div id="footer_subscribe">
+            <h3>Subuscribe</h3>
+
+            <p>
+                Enter your e-mail to get notified about our news solutions
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+
+          </div>
+    </div>
+<div Class="footer_copyright">
+        <p>&#169</p>
+        <p>2024 all rights reserved</p>
+</div>
+</footer>
+</html>
